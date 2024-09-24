@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Aevline-v1/static/css/main.fc7894e6.css",
+    "main.js": "/Aevline-v1/static/js/main.a1ad151e.js",
+    "static/media/14.jpg": "/Aevline-v1/static/media/14.a49d6d3f737c73415908.jpg",
+    "static/media/logo.jpg": "/Aevline-v1/static/media/logo.6a405f5d130e3869b61a.jpg",
+    "static/media/banner-2.jpg": "/Aevline-v1/static/media/banner-2.b3092704c29b47c85d65.jpg",
+    "static/media/banner-1.jpg": "/Aevline-v1/static/media/banner-1.cfeba525561ff2e803bb.jpg",
+    "static/media/banner-3.jpg": "/Aevline-v1/static/media/banner-3.d90f050178987f8c6ccc.jpg",
+    "static/media/jacket-2.jpg": "/Aevline-v1/static/media/jacket-2.1abdc5041c588a1c9309.jpg",
+    "static/media/shampoo.jpg": "/Aevline-v1/static/media/shampoo.e7dc678a17a611e75ebd.jpg",
+    "static/media/logo.png": "/Aevline-v1/static/media/logo.4e198066b7df20d10867.png",
+    "static/media/banner-bg.jpg": "/Aevline-v1/static/media/banner-bg.f588b29145939c559001.jpg",
+    "static/media/avatar.png": "/Aevline-v1/static/media/avatar.f5ed20588df8bb546e2d.png",
+    "static/media/redux.cjs": "/Aevline-v1/static/media/redux.7edfc461ab353f1712ab.cjs",
+    "static/media/slick.svg": "/Aevline-v1/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Aevline-v1/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Aevline-v1/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Aevline-v1/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Aevline-v1/index.html",
+    "main.fc7894e6.css.map": "/Aevline-v1/static/css/main.fc7894e6.css.map",
+    "main.a1ad151e.js.map": "/Aevline-v1/static/js/main.a1ad151e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc7894e6.css",
+    "static/js/main.a1ad151e.js"
+  ]
+}
