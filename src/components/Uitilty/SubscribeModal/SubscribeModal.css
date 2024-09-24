@@ -1,0 +1,144 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: hsla(0, 0%, 0%, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 10;
+    animation: popup 1s ease-in-out 5s forwards;
+  }
+  
+  @keyframes popup {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+    }
+  }
+  
+  .modal.closed {
+    display: none;
+  }
+  
+  .modal-close-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .newsletter-img {
+    display: none;
+  }
+  
+  .modal-content {
+    position: relative;
+    max-width: 350px;
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 2;
+    animation: scaleUp 0.5s ease-in-out 5s forwards;
+  }
+  
+  @keyframes scaleUp {
+    0% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+  }
+  
+  .modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: salmon;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .modal-close-btn:hover {
+    opacity: 0.9;
+  }
+  
+  .newsletter {
+    padding: 50px 30px;
+    text-align: center;
+  }
+  
+  .newsletter-header {
+    margin-bottom: 20px;
+  }
+  
+  .newsletter-title {
+    color: #202020;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter-desc {
+    color: #6c6c6c;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .email-field {
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 16px;
+  }
+  
+  .btn-newsletter {
+    background: #1a1a1a;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin: auto;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-newsletter:hover {
+    background: salmon;
+  }
+  
+  /* responsive larger than 570px screen */
+  @media (min-width: 570px) {
+    .modal-content {
+      display: flex;
+      align-items: center;
+      max-width: 750px;
+      width: fit-content;
+    }
+  
+    .newsletter-img {
+      display: block;
+    }
+  
+    .newsletter {
+      text-align: left;
+    }
+  }
+  

@@ -1,0 +1,29 @@
+.product-card {
+    border-radius: 8px;
+    border: none;
+    background-color: #ffffff;
+    transition: transform 0.2s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .item-delete-edit {
+    cursor: pointer;
+    color: #ff8f9c;
+    margin: 5px;
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  .card-rate {
+    color: #f39c12;
+  }
+  
+  .card-price {
+    font-weight: bold;
+  }
+  

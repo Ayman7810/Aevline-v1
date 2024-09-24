@@ -1,0 +1,65 @@
+.admin-create-coupon-wrapper {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* المسافات بين العناصر */
+    padding-left: 40px !important;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .admin-content-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-form {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+  }
+  
+  .input-form:focus {
+    border-color: #ff8f9c;
+    outline: none;
+  }
+  
+  .btn-save {
+    padding: 12px 20px;
+    background-color: #ff8f9c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-save:hover {
+    background-color: #ff6666;
+  }
+  
+  .coupons-list {
+    margin-top: 20px;
+  }
+  
+  .spinner-border {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  

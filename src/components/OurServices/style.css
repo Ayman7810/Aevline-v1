@@ -1,0 +1,65 @@
+/* الأساسيات العامة */
+.service {
+    padding: 30px;
+  }
+  
+  .title {
+    font-size: 2rem; /* حجم العنوان على الشاشات الكبيرة */
+    margin-bottom: 20px;
+    text-align: right; /* محاذاة العنوان إلى اليمين على الشاشات الكبيرة */
+  }
+  
+  .service-container {
+    display: flex;
+    flex-direction: column; /* عرض العناصر بشكل عمودي */
+    gap: 20px;
+    align-items: flex-start; /* محاذاة العناصر إلى اليمين على الشاشات الكبيرة */
+    border: none; /* إزالة الحدود */
+  }
+  
+  /* تصميم عنصر الخدمة */
+  .service-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* تقليل المسافة بين الأيقونة والنص */
+  }
+  
+  .service-icon {
+    font-size: 25px; /* تصغير حجم الأيقونة */
+    color: var(--salmon-pink);
+    transition: color 0.3s ease;
+  }
+  
+  .service-icon:hover {
+    color: var(--eerie-black);
+  }
+  
+  .service-title {
+    color: var(--sonic-silver);
+    font-size: 1.2rem; /* تصغير حجم العنوان */
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0; /* إزالة الحدود */
+  }
+  
+  .service-desc {
+    color: var(--sonic-silver);
+    font-size: 0.9rem; /* تصغير حجم الوصف */
+  }
+  
+  /* التصميم على الشاشات الصغيرة */
+  @media (max-width: 767px) {
+    .title {
+      font-size: 2.5rem; /* زيادة حجم العنوان على الشاشات الصغيرة */
+      text-align: center; /* محاذاة العنوان إلى المركز */
+    }
+  
+    .service-container {
+      align-items: center; /* محاذاة العناصر إلى المركز */
+    }
+  
+    .service-item {
+      text-align: center; /* محاذاة النص داخل العنصر */
+    }
+  }
+  

@@ -1,0 +1,333 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+/* تحديث الأنماط الخاصة ببطاقات المنتجات لتتوافق مع نظام Bootstrap */
+
+.product-card {
+  border: 1px solid var(--cultured);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  transition: var(--transition-timing);
+}
+
+.product-card:hover {
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
+}
+
+.product-card .position-relative {
+  position: relative;
+}
+
+.product-card .product-img {
+  width: 100%;
+  height: '' !important; /* تحديد ارتفاع ثابت للصورة */
+  object-fit: cover; /* الحفاظ على نسبة العرض إلى الارتفاع مع تغطية العنصر */
+  transition: var(--transition-timing);
+}
+
+.product-card .product-img.default {
+  position: relative;
+  z-index: 1;
+}
+
+.product-card .product-img.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+}
+
+.product-card:hover .product-img.hover {
+  opacity: 1;
+}
+
+.product-card:hover .product-img.default {
+  opacity: 0;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.1);
+}
+
+.product-card .showcase-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: var(--ocean-green);
+  font-size: var(--fs-8);
+  font-weight: var(--weight-500);
+  color: var(--white);
+  padding: 0 8px;
+  border-radius: var(--border-radius-sm);
+  z-index: 3;
+}
+
+.product-card .showcase-badge.angle {
+  top: 8px;
+  left: -29px;
+  transform: rotate(-45deg);
+  text-transform: uppercase;
+  font-size: 11px;
+  padding: 5px 40px;
+}
+
+.product-card .showcase-badge.black { background: var(--eerie-black); }
+
+.product-card .showcase-badge.pink { background: var(--salmon-pink); }
+
+.product-card .showcase-actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  transform: translateX(50px);
+  transition: var(--transition-timing);
+  z-index: 3;
+}
+
+.product-card:hover .showcase-actions {
+  transform: translateX(0);
+}
+
+.product-card .btn-action {
+  background: var(--white);
+  color: var(--sonic-silver);
+  margin-bottom: 5px;
+  border: 1px solid var(--cultured);
+  padding: 5px;
+  border-radius: var(--border-radius-sm);
+  transition: var(--transition-timing);
+}
+
+.product-card .btn-action:hover {
+  background: var(--eerie-black);
+  color: var(--white);
+  border-color: var(--eerie-black);
+}
+
+.product-card .card-body {
+  padding: 15px 20px;
+}
+
+.product-card .showcase-category {
+  color: var(--salmon-pink);
+  font-size: var(--fs-9);
+  font-weight: var(--weight-500);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.product-card .showcase-title {
+  color: var(--sonic-silver);
+  font-size: var(--fs-8);
+  font-weight: var(--weight-300);
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  transition: var(--transition-timing);
+}
+
+.product-card .showcase-title:hover {
+  color: var(--eerie-black);
+}
+
+.product-card .showcase-rating {
+  display: flex;
+  color: #ff66b2 !important;
+  margin-bottom: 10px;
+}
+
+.product-card .price-box {
+  display: flex;
+  gap: 10px;
+  font-size: var(--fs-7);
+  color: var(--eerie-black);
+  margin-bottom: 10px;
+}
+
+.product-card .price {
+  font-weight: var(--weight-700);
+}
+
+.product-card del {
+  color: var(--sonic-silver);
+}
+
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+/* تحديث الأنماط الخاصة بعنوان الكنتينر وزر المزيد */
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.product-header h2 {
+  color: var(--eerie-black);
+  font-size: var(--fs-4);
+  font-weight: var(--weight-600);
+}
+
+.btn-more {
+  background-color: var(--ocean-green);
+  color: var(--white);
+  padding: 10px 20px;
+  font-size: var(--fs-6);
+  font-weight: var(--weight-500);
+  border-radius: var(--border-radius-sm);
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  transition: var(--transition-timing);
+}
+
+.btn-more:hover {
+  background-color: var(--sandy-brown);
+  color: var(--white);
+}
+
+.showcase-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.showcase-rating svg {
+  color: var(--sandy-brown); /* لون النجوم المملوءة */
+  font-size: 1rem; /* حجم الأيقونات */
+}
+
+.showcase-rating svg:last-child {
+  color: var(--sonic-silver); /* لون النجوم الفارغة */
+}
+
+/* style.css */
+
+/* Existing styles ... */
+
+/* Additional Styles for buttons in product actions */
+.showcase-actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+
+.btn-action {
+  background: var(--white);
+  color: var(--sonic-silver);
+  border: 1px solid var(--cultured);
+  padding: 10px;
+  border-radius: var(--border-radius-sm);
+  font-size: 1.2rem;
+  transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+.btn-action:hover {
+  background: var(--eerie-black);
+  color: var(--white);
+  border-color: var(--eerie-black);
+  transform: scale(1.1);
+}
+
+.btn-action:active {
+  transform: scale(0.9);
+}
+
+/* Customize the rating stars */
+.showcase-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.showcase-rating svg {
+  color: var(--sandy-brown); /* لون النجوم المملوءة */
+  font-size: 1.2rem; /* حجم الأيقونات */
+}
+
+.showcase-rating svg:last-child {
+  color: var(--sonic-silver); /* لون النجوم الفارغة */
+}
+
+
+/* style.css */
+.product-slider .slick-slide {
+  margin: 0 10px; /* Adjust the margin to create space between cards */
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden !important;
+  position: relative;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn-more {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-more:hover {
+  background-color: #0056b3;
+}
+
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-header {
+  margin-bottom: 20px;
+}
+
+.btn-more {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-more:hover {
+  background-color: #0056b3;
+}
+
+.slick-list{
+  height: 500px;
+}

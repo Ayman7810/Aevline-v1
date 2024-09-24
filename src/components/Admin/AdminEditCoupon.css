@@ -1,0 +1,14 @@
+.admin-edit-coupon {
+    margin: 20px 0;
+  }
+  
+  .input-form {
+    border-radius: 5px;
+  }
+  
+  .btn-save {
+    background-color: #f24080; /* لون مخصص */
+    color: white;
+    border: none;
+  }
+  

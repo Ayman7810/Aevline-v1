@@ -1,0 +1,522 @@
+/* CartPage.css */
+
+.cart-section {
+    padding: 80px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-lg-8, .col-lg-4 {
+    flex: 1;
+  }
+  
+  .cart-table {
+    padding: 40px 34px 0;
+    background: #f0f0f0;
+    border-radius: 27px;
+    overflow: hidden;
+  }
+  
+  .cart-table h3 {
+    font-weight: 700;
+    margin-bottom: 37px;
+  }
+  
+  .cart-table table {
+    width: 100%;
+    margin-bottom: 17px;
+  }
+  
+  .cart-table table tr th {
+    font-size: 12px;
+    font-weight: 400;
+    color: #414141;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  
+  .cart-table table tr th.product-th {
+    text-align: left;
+  }
+  
+  .cart-table table tr th.color-th {
+    padding-right: 30px;
+  }
+  
+  .cart-table table tr th.quy-th {
+    padding-right: 20px;
+  }
+  
+  .cart-table table tr th.total-th {
+    padding-right: 20px;
+  }
+  
+  .cart-table table tr th.remove-th {
+    padding-right: 20px;
+  }
+  
+  .cart-table .product-col {
+    display: table;
+    margin-bottom: 19px;
+  }
+  
+  .cart-table .product-col img {
+    display: table-cell;
+    vertical-align: middle;
+    width: 73px;
+  }
+  
+  .cart-table .product-col .pc-title {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 30px;
+  }
+  
+  .cart-table .product-col .pc-title h4 {
+    font-size: 16px;
+    color: #414141;
+    font-weight: 700;
+    margin-bottom: 3px;
+  }
+  
+  .cart-table .product-col .pc-title p {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #414141;
+  }
+  
+  .cart-table .quy-col {
+    padding-right: 20px;
+  }
+  
+  .cart-table .quantity {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cart-table .quantity .pro-qty {
+    width: 60px;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  .cart-table .size-col {
+    padding-right: 30px;
+  }
+  
+  .cart-table .color-col {
+    text-align: center;
+  }
+  
+  .cart-table .color-col .color-option {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+  
+  .cart-table .total-col {
+    text-align: center;
+  }
+  
+  .cart-table .total-col h4 {
+    font-size: 18px;
+    color: #414141;
+    font-weight: 400;
+  }
+  
+  .cart-table .remove-col {
+    text-align: center;
+  }
+  
+  .cart-table .remove-icon {
+    color: hsl(0, 100%, 70%);
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .cart-table .total-cost {
+    background: hsl(0, 100%, 70%);
+    margin: 0 -34px;
+    text-align: right;
+    padding: 22px 0;
+    padding-right: 50px;
+  }
+  
+  .cart-table .total-cost h6 {
+    line-height: 1;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .cart-table .total-cost h6 span {
+    margin-left: 38px;
+  }
+  
+  .card-right .site-btn {
+    margin-bottom: 14px;
+    width: 100%;
+    min-height: 57px;
+    padding: 23px 47px 14px;
+    background: hsl(0, 100%, 70%);
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 80px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-right .site-btn.sb-dark {
+    background: #333;
+    color: #fff;
+  }
+  
+  .card-right .site-btn .btn-icon {
+    margin-left: 8px;
+    font-size: 18px;
+  }
+  
+  .promo-code-form {
+    position: relative;
+    margin-bottom: 14px;
+  }
+  
+  .promo-code-form input {
+    width: 100%;
+    height: 58px;
+    border: 2px solid #f0f0f0;
+    padding-left: 24px;
+    padding-right: 100px;
+    font-size: 16px;
+    border-radius: 80px;
+  }
+  
+  .promo-code-form button {
+    position: absolute;
+    right: 24px;
+    top: 0;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(0, 100%, 70%);
+    cursor: pointer;
+  }
+  /* CartPage.css */
+
+/* Existing styles remain the same */
+
+.cart-table {
+  padding: 40px 34px 0;
+  background: #f0f0f0;
+  border-radius: 27px;
+  overflow: hidden;
+}
+
+.cart-table h3 {
+  font-weight: 700;
+  margin-bottom: 37px;
+}
+
+.cart-table table {
+  width: 100%;
+  margin-bottom: 17px;
+}
+
+.cart-table table tr th {
+  font-size: 12px;
+  font-weight: 400;
+  color: #414141;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.cart-table table tr th.product-th {
+  text-align: left;
+}
+
+.cart-table table tr th.color-th {
+  padding-right: 30px;
+}
+
+.cart-table table tr th.quy-th {
+  padding-right: 20px;
+}
+
+.cart-table table tr th.total-th {
+  padding-right: 20px;
+}
+
+.cart-table table tr th.remove-th {
+  padding-right: 20px;
+}
+
+.cart-table .product-col {
+  display: flex;
+  align-items: center;
+  margin-bottom: 19px;
+}
+
+.cart-table .product-col img {
+  width: 73px;
+  margin-right: 15px;
+}
+
+.cart-table .product-col .pc-title {
+  flex: 1;
+}
+
+.cart-table .product-col .pc-title h4 {
+  font-size: 16px;
+  color: #414141;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.cart-table .product-col .pc-title p {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #414141;
+}
+
+.cart-table .quy-col {
+  text-align: center;
+}
+
+.cart-table .quantity {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.cart-table .quantity .pro-qty {
+  width: 60px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.cart-table .color-col {
+  text-align: center;
+}
+
+.cart-table .color-col .color-option {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.cart-table .total-col {
+  text-align: center;
+}
+
+.cart-table .total-col h4 {
+  font-size: 18px;
+  color: #414141;
+  font-weight: 400;
+}
+
+.cart-table .remove-col {
+  text-align: center;
+}
+
+.cart-table .remove-icon {
+  color: hsl(0, 100%, 70%);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* New styles for responsive design */
+@media (max-width: 1000px) {
+
+    .promo-code-form input{
+        margin-top: 50px !important;
+    }
+}
+
+@media (max-width: 767px) {
+  .cart-table table {
+    display: block;
+    width: 100%;
+  }
+  .cart-table .product-col {
+    display: flex !important;
+  }
+  .cart-table table thead {
+    display: none;
+  }
+  
+
+  
+  .cart-table table tbody {
+    display: block;
+    width: 100%;
+  }
+  
+  .cart-table table tr {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background: #fff;
+  }
+  
+  .cart-table table td {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  
+  .cart-table table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .cart-table .product-col {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .cart-table .product-col img {
+    margin-right: 0;
+    width: 100px;
+  }
+  
+  .cart-table .pc-title {
+    margin-left: 0;
+  }
+  
+  .cart-table .quantity, .cart-table .color-col {
+    margin-bottom: 10px;
+  }
+  
+  .cart-table .remove-icon {
+    font-size: 24px;
+  }
+  
+  .card-right .site-btn {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+.cart-section {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cart-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cart-item {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-item img {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.cart-item-details {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.cart-item-details h4 {
+  font-size: 16px;
+  color: #414141;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.cart-item-details p {
+  font-size: 14px;
+  color: #414141;
+  margin: 2px 0;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-control input {
+  width: 60px;
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.remove-icon {
+  color: hsl(0, 100%, 70%);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.total-cost {
+  background: hsl(0, 100%, 70%);
+  padding: 20px;
+  text-align: right;
+  color: #fff;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.total-cost h6 {
+  font-size: 18px;
+  font-weight: 700;
+}
+@media (max-width: 575.98px) {
+  .cart-item {
+    flex-direction: column; /* لجعل البطاقة عمودية */
+    align-items: center; /* محاذاة العناصر في الوسط */
+  }
+
+  .cart-item img {
+    width: 100%; /* جعل الصورة تأخذ عرض البطاقة */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+  }
+
+  .quantity-control {
+    margin-top: 10px; /* إضافة مسافة فوق عنصر التحكم في الكمية */
+  }
+}

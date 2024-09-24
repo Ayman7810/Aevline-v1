@@ -1,0 +1,241 @@
+/**
+ * تعيين الحد الأقصى لعرض الحاوية
+ *
+ * @format
+ */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* تنسيق القسم الرئيسي للمنتج */
+.product-featured {
+  position: relative;
+  margin: 30px 0;
+}
+
+/* تصميم بطاقة المنتج */
+.product-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* تقليل الارتفاع */
+  height: 500px;
+  /* تحسين التمرير */
+  overflow: hidden;
+}
+
+/* تنسيق حاوية الصورة */
+.product-img-container {
+  flex: 1;
+  overflow: hidden;
+  border-right: 1px solid #ddd;
+}
+
+/* تحسين عرض الصورة */
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* تنسيق معلومات المنتج */
+.product-info {
+  flex: 2;
+  padding: 15px; /* إضافة مساحة حول المحتوى */
+}
+
+/* تنسيق تصنيف المنتج */
+.product-rating {
+  color: #ff66b2; /* لون وردي */
+  font-size: 1.5rem;
+}
+
+/* تنسيق عنوان المنتج */
+.product-title {
+  font-size: 1.5rem; /* تصغير الخط */
+  color: #333;
+  margin: 0;
+}
+
+/* تنسيق وصف المنتج */
+.product-desc {
+  color: #666;
+  font-size: 0.875rem; /* تصغير الخط */
+}
+
+/* تنسيق صندوق السعر */
+.price-box {
+  font-size: 1.25rem;
+  margin: 10px 0;
+}
+
+/* تنسيق السعر الحالي */
+.price {
+  color: #ff66b2; /* لون وردي */
+  font-weight: bold;
+}
+
+/* تنسيق السعر القديم */
+.old-price {
+  color: #999;
+  text-decoration: line-through;
+}
+
+/* تنسيق زر "إضافة إلى السلة" */
+#add-cart-btn {
+  background-color: #ff66b2 !important
+
+  ; /* لون وردي */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+/* تنسيق حالة المنتج */
+.product-status {
+  margin: 15px 0;
+}
+
+/* تنسيق معلومات الحالة */
+.status-info {
+  color: #333;
+  font-size: 1rem;
+}
+
+/* تنسيق شريط الحالة */
+.status-bar {
+  background-color: #eee;
+  height: 10px;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 5px;
+}
+
+/* تنسيق شريط الحالة المعبأ */
+.status-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40%;
+  background-color: #ff66b2; /* لون وردي */
+  border-radius: 5px;
+}
+
+/* تنسيق صندوق العد التنازلي */
+.countdown-box {
+  margin-top: 15px;
+}
+
+/* تنسيق وصف العد التنازلي */
+.countdown-desc {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* تنسيق العد التنازلي */
+.countdown {
+  display: flex;
+  gap: 10px;
+}
+
+/* تنسيق محتوى العد التنازلي */
+.countdown-content {
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* تنسيق الرقم في العد التنازلي */
+.display-number {
+  color: #333;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* تنسيق النص في العد التنازلي */
+.display-text {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+/* إزالة تأثير التكبير عند مرور الماوس */
+.product-card:hover {
+  transform: scale(1);
+}
+
+.product-card:hover .product-img {
+  transform: scale(1);
+}
+
+/* تحسين التمرير وإخفاء شريط التمرير */
+.product-img-container {
+  overflow: hidden;
+}
+
+/* تعيين ارتفاع الصورة */
+.product-card .product-img {
+  height: 100%;
+}
+
+/* إزالة الحدود والظل عند المرور بالماوس */
+.product-card {
+  border: none;
+  box-shadow: none;
+}
+
+.product-card:hover {
+  box-shadow: none;
+}
+
+/* إزالة الحدود اليمنى */
+.product-img-container {
+  border-right: none;
+}
+
+/* تحسين التمرير للمنتجات في الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .product-card {
+    flex-direction: column;
+    height: auto; /* السماح للارتفاع بالتكيف مع المحتوى */
+  }
+
+  .product-img-container {
+    border-right: none;
+  }
+
+  .product-info {
+    padding: 10px;
+  }
+
+  .product-title {
+    font-size: 1.25rem; /* تصغير الخط */
+  }
+
+  .product-desc {
+    font-size: 0.75rem; /* تصغير الخط */
+  }
+
+  .price-box {
+    font-size: 1rem; /* تصغير الخط */
+  }
+
+  .countdown {
+    flex-direction: column;
+  }
+}
