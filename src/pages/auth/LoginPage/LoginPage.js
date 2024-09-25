@@ -131,7 +131,7 @@ const LoginPage = () => {
                             نسيت كلمة المرور
                           </Link>
                         </div>
-                        <div className="col-6 ">
+                        {/* <div className="col-6 ">
                           <p className="mb-0 fs-6">
                             <Link to="/Admin/index" className="mx-2 moveLink">
                               تسجيل الدخول كادمن
@@ -142,7 +142,7 @@ const LoginPage = () => {
                           <Link to="/User/index" className="mx-2 moveLink">
                             تسجيل الخدول كمستخدم
                           </Link>
-                        </div>
+                        </div> */}
                       </div>
                     </form>
                   </Col>
