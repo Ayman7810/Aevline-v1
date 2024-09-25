@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Aevline-v1/static/css/main.fc7894e6.css",
-    "main.js": "/Aevline-v1/static/js/main.a1ad151e.js",
+    "main.js": "/Aevline-v1/static/js/main.d60ad27c.js",
     "static/media/14.jpg": "/Aevline-v1/static/media/14.a49d6d3f737c73415908.jpg",
     "static/media/logo.jpg": "/Aevline-v1/static/media/logo.6a405f5d130e3869b61a.jpg",
     "static/media/banner-2.jpg": "/Aevline-v1/static/media/banner-2.b3092704c29b47c85d65.jpg",
@@ -19,10 +19,10 @@
     "static/media/slick.woff": "/Aevline-v1/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Aevline-v1/index.html",
     "main.fc7894e6.css.map": "/Aevline-v1/static/css/main.fc7894e6.css.map",
-    "main.a1ad151e.js.map": "/Aevline-v1/static/js/main.a1ad151e.js.map"
+    "main.d60ad27c.js.map": "/Aevline-v1/static/js/main.d60ad27c.js.map"
   },
   "entrypoints": [
     "static/css/main.fc7894e6.css",
-    "static/js/main.a1ad151e.js"
+    "static/js/main.d60ad27c.js"
   ]
 }
