@@ -47,7 +47,6 @@ const ProductContainerGrid = ({ products = [], title, btn }) => {
             </div>
         )}
       </div>
-      <ToastContainer />
     </div>
   );
 };

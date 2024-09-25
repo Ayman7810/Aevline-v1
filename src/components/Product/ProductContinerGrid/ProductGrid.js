@@ -1,13 +1,10 @@
-/** @format */
-
-import React, { useState } from "react";
+import React from "react";
 import {
   FaStar,
   FaRegStar,
   FaHeart,
   FaShoppingCart,
   FaEye,
-  FaSync,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import AddToCartHook from "../../../hook/cart/add-to-cart-hook";
@@ -26,11 +23,10 @@ const ProductGrid = ({
   ratingsAverage,
   ratingsQuantity,
 }) => {
-  const [HeartIcon, fill, handelFav] = WishListHook(id, fivProd, products);
-  const [handelAddToCart] = AddToCartHook(id);
+  const [HeartIcon, fill, handleFav, res] = WishListHook(id, fivProd, products);
+  const [handleAddToCart] = AddToCartHook(id);
 
   return (
-
     <div className="col-md-3 mb-4">
       <div className="card product-card">
         <div className="position-relative">
@@ -49,8 +45,9 @@ const ProductGrid = ({
           <div className="showcase-actions">
             <button
               className="btn-action"
-              aria-label="Sync"
-              onClick={handelAddToCart}>
+              aria-label="Add to Cart"
+              onClick={handleAddToCart}
+            >
               <FaShoppingCart />
             </button>
             <Link to={`/producte-detalis/${id}`}>
@@ -61,8 +58,8 @@ const ProductGrid = ({
             <button
               className="btn-action"
               aria-label="Add to Favorites"
-              onClick={handelFav}
-              style={{ color: HeartIcon ? "#ff8f9c" : "#777" }} // تغيير اللو
+              onClick={handleFav}
+              style={{ color: HeartIcon ? "#ff8f9c" : "#777" }}
             >
               {HeartIcon ? <FaHeart /> : <FaHeart color="#7777" />}
             </button>
@@ -85,7 +82,7 @@ const ProductGrid = ({
               )
             )}
           </div>
-          <a href="#" className="showcase-category" style={{color:'#777'}}>
+          <a href="#" className="showcase-category" style={{ color: '#777' }}>
             عدد المقيمين
             <b className="mx-1"> {ratingsQuantity}</b>
           </a>
@@ -104,7 +101,8 @@ const ProductGrid = ({
                       fontWeight: "initial",
                       marginLeft: "10px",
                       color: "#777",
-                    }}>
+                    }}
+                  >
                     {price}
                     <b className="me-1">ريال</b>
                   </span>

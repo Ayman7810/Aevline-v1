@@ -5,12 +5,17 @@ import notify from "../NotifcationHook";
 
 const AddToCartHook = (id, color) => {
   const dispatch = useDispatch();
-  const [loading, setLoading] = useState(true);
-
-  const handleAddToCart = async () => {
+  const [loading, setLoading] = useState(false);
+  
+  const handelAddToCart = async () => {
+    if(!localStorage.getItem('token')){
+      notify("يرجى تسجيل أولاً", "error");
+      return;
+    }
     setLoading(true);
-    await dispatch(AddToCart({ productId: id, color }));
+    const response = await dispatch(AddToCart({ productId: id, color }));
     setLoading(false);
+    return response;
   };
 
   const res = useSelector((state) => state.cart.addCart) || {};
@@ -22,15 +27,13 @@ const AddToCartHook = (id, color) => {
         setTimeout(() => {
           window.location.reload();
         }, 1500);
-      } else if (res.data?.message === "Invalid Token. please login again") {
-        notify("يرجى تسجيل الدخول", "warn");
       } else if (res.status === 400) {
         notify("فشلت عملية الاضافة", "error");
       }
     }
   }, [loading, res]);
 
-  return [handleAddToCart, res];
+  return [handelAddToCart, res];
 };
 
 export default AddToCartHook;

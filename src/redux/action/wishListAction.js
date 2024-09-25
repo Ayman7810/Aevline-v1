@@ -9,13 +9,14 @@ import { ADD_TO_WISHLIST, DELETE_FROM_WISHLIST, GET_ALL_WISHLIST,  } from "../re
 export const addProductToWishList = (body) => async (dispach) => {
   try {
     const respose = await UseInsertData(`/api/v1/wishlist`,body);
-    // console.log(respose)
+    console.log("AddToCart Response:", respose); 
     dispach({
       type: ADD_TO_WISHLIST,
       paylode: respose,
       lodaing: true,
     });
   } catch (e) {
+    console.log("AddToCart Error:", e.response); 
     dispach({
       type: ADD_TO_WISHLIST,
       paylode: e.response,

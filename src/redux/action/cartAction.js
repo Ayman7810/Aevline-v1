@@ -6,22 +6,24 @@ import { UseGetDataWithToken } from "../../hooks/UseGetData";
 import { UseInsertData } from "../../hooks/UseInsertData";
 import { ADD_TO_CART, APPLY_COUPON_TO_CART, DELETE_ALL_CART, DELETE_ONE_CART, EDIT_CATR_COUNT, GET_ALL_CART } from "../reducers/type";
 
-// insert Coupon new
+
 export const AddToCart = (body) => async (dispach) => {
   try {
-    const respose = await UseInsertData(`/api/v1/cart`, body);
-    // console.log(respose)
+    const response = await UseInsertData(`/api/v1/cart`, body);
+    console.log("AddToCart Response:", response); 
     dispach({
       type: ADD_TO_CART,
-      paylode: respose,
+      paylode: response,
     });
   } catch (e) {
+    console.error("AddToCart Error:", e.response); 
     dispach({
       type: ADD_TO_CART,
       paylode: e.response,
     });
   }
 };
+
 
 export const GetAllCart = () => async (dispach) => {
   try {

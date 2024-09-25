@@ -23,7 +23,6 @@ const WishListHook = (id, fivProd) => {
     }
   }, [fill, fivProd, id, outLine]);
 
-  // const res = useSelector((state) => state.wishList);
   useEffect(() => {
     dispatch(getAllWishList);
   }, [dispatch]);
@@ -31,31 +30,30 @@ const WishListHook = (id, fivProd) => {
   const res = useSelector((state) => state.wishList) || {};
   // console.log(res);
   const handleFav = async () => {
+    if(!localStorage.getItem('token')){
+      notify("يرجى تسجيل أولاً", "error");
+      return;
+    }
     if (res) {
-      if (
-        res.allWishList?.message &&
-        res.allWishList.message === "Invalid Token. please login again"
-      ) {
-        notify("يرجى تسجيل الدخول أولاً", "error");
-      } else if (HeartIcon === outLine) {
+    if (HeartIcon === outLine) {
         await addWishList();
-        res.addWishList.status = res.addWishList.status || 200;
-        if (res.addWishList.status && res.addWishList.status === 200) {
+        res.addWishList.status =  res.addWishList.status || 200
+        if (
+          res.addWishList.status &&
+          res.addWishList.status === 200 
+        ) {
           notify("تمت إضافة المنتج إلى المفضلة", "success");
-          setHeartIcon(fill);
           setTimeout(() => {
-            window.location.reload();
+            window.location.reload()
           }, 1500);
-        } else {
+          setHeartIcon(fill);
+        }else {
           notify("حدث خطاء", "error");
         }
       } else {
         await deleteWishList();
-        notify("تم ازالة المنتج من المفضلة", "warn");
+        notify("تم ازالة المنتج من المفضلة", "success");
         setHeartIcon(outLine);
-        setTimeout(() => {
-          window.location.reload();
-        }, 1500);
       }
     }
   };
@@ -68,7 +66,7 @@ const WishListHook = (id, fivProd) => {
     await dispatch(deleteProductFromWishList(id));
   };
 
-  return [HeartIcon, fill, handleFav];
+  return [HeartIcon, fill, handleFav ];
 };
 
 export default WishListHook;

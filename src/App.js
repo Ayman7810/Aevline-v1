@@ -26,6 +26,7 @@ import UserEditAddressPage from "./pages/User/UserEditAddressPage.js";
 import UserProfilePage from "./pages/User/UserProfilePage.js";
 import EditUserProfilePage from "./pages/User/EditUserProfilePage.js";
 import ProductesByCategoryPage from "./pages/Producte/ProductesByCategoryPage/ProductesByCategoryPage.js";
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   return (
@@ -64,6 +65,7 @@ const App = () => {
           <Route path="/User/edit-profile" element={<EditUserProfilePage />} />
         </Routes>
       </HashRouter>
+      <ToastContainer />
     </div>
   );
 };
